@@ -26,7 +26,7 @@ def main() -> None:
     app = build_app(
         token=TG_BOT_TOKEN,
         on_message=MessageHandler(
-            filters.TEXT | filters.CAPTION | filters.PHOTO,
+            (filters.TEXT | filters.CAPTION | filters.PHOTO) & ~filters.COMMAND,
             handler_with_trilium,
         ),
     )
