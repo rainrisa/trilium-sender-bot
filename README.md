@@ -26,6 +26,32 @@ Currently, it has some limitations:
 * Only supports text and images; other message types are skipped
 * You are required to edit the code directly to customize the note layout
 
+## Installation
+
+### Docker
+
+Clone this project
+
+```
+git clone https://github.com/rainrisa/trilium-sender-bot.git
+```
+
+Copy the `.env` from `.env.example` and fill out the variables
+
+```
+cp .env.example .env # then fill out the .env
+```
+
+After that, just run
+
+```
+docker compose up -d
+```
+
+### Manual
+
+I don't have the guide for manual installation for now, but you can view the step-by-step installation on the `Dockerfile`
+
 ## Environment Variables
 
 * `TRILIUM_URL` (**required**) – your Trilium base URL
@@ -33,16 +59,6 @@ Currently, it has some limitations:
 * `TRILIUM_NOTE_ID` (**required**) – target note ID where content will be appended
 * `TG_BOT_TOKEN` (**required**) – your Telegram bot token from BotFather
 * `TG_ADMIN_IDS` (**required**) – space-separated Telegram user or channel IDs allowed to use the bot
-
-### Example
-
-```env
-TRILIUM_URL=http://localhost:8080
-TRILIUM_TOKEN=your_trilium_token
-TRILIUM_NOTE_ID=your_note_id
-TG_BOT_TOKEN=your_bot_token
-TG_ADMIN_IDS=123456789 -100987654321
-```
 
 ## FAQ
 
