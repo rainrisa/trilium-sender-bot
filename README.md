@@ -4,6 +4,12 @@ Hi, this is just my personal bot to improve my programming skills
 
 This repository contains a Telegram bot that sends messages and images directly into a Trilium note. It’s mainly for easy access, since I tend to open Telegram more often than Trilium when I’m on mobile
 
+## Screenshots
+
+_Post on Telegram channel_  |  _Result on TriliumDroid_
+:-------------------------:|:-------------------------:
+![](https://github.com/user-attachments/assets/d028fbd2-a668-4810-886b-0d3e27191cf2)  |  ![](https://github.com/user-attachments/assets/a97ad82f-f72f-43c0-8b32-1cabce4784f8)
+
 ## Features
 
 * Append text and images
